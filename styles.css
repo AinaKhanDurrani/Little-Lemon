@@ -1,0 +1,301 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  height: 3.5rem;
+  background: #fff44f;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+header > img {
+  height: 80%;
+}
+
+nav {
+  background: #8bc34a;
+}
+
+.nav_item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 3.7rem;
+}
+
+.nav_item > li {
+  list-style: none;
+}
+
+.nav_item > li > a {
+  text-decoration: none;
+  color: #ffffff;
+  padding: 0.99rem 2rem;
+  font-size: 1rem;
+}
+
+.nav_item > li > a:hover {
+  background-color: #fff44f;
+  color: #565454;
+  font-size: 1.1rem;
+  border: 1px solid #565454;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Black with 60% opacity */
+}
+
+.hero {
+  position: relative;
+  height: 25rem;
+  background: url("./img/bg1.jpg") no-repeat;
+  background-size: cover;
+  background-position: center top; /* Center the background image vertically and crop from the top */
+  position: relative;
+  top: 0;
+  z-index: -11;
+  height: 30rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero > p::before {
+  content: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, harum consequuntur officia libero voluptatem veniam recusandae aperiam enim delectus totam nulla quas repudiandae iure dignissimos expedita voluptates, magnam voluptatum ratione maiores maxime.";
+  position: absolute;
+  color: #000;
+  top: -0.1rem;
+  left: -0.1rem;
+  -webkit-text-stroke: 1.5px #8bc34a;
+  z-index: -1;
+}
+.hero > p {
+  width: 45%;
+  margin: 3rem;
+  font-size: 1.5rem;
+  letter-spacing: 0.2rem;
+  color: #fff;
+  position: relative;
+}
+
+.hero > a {
+  background-color: #8bc34a;
+  color: #fff;
+  border: none;
+  padding: 0.6rem 2rem;
+  border-radius: 0.7rem;
+  text-decoration: none;
+  z-index: 11111;
+}
+
+.menu {
+  padding: 10px;
+}
+
+.menu > .menu-heading {
+  font-size: 2.4rem;
+  margin-top: 0.8rem;
+}
+
+.menu_item {
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around; /* Adjust as needed */
+}
+
+.menu-heading {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.card {
+  width: calc(33.33% - 30px); /* Calculate width for three cards with margin */
+  /* margin: 0 10px 20px;  */
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s;
+  margin: 0 auto 20px;
+  position: relative;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.card-content {
+  padding: 20px;
+}
+
+.card-title {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.card-description {
+  margin-bottom: 10px;
+}
+
+.card-price {
+  font-weight: bold;
+  color: #333;
+  margin-top: 10px;
+}
+
+.about-us {
+  background-color: #f9f9f9;
+  padding: 50px 0;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.section-heading {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.about-content {
+  margin-bottom: 40px;
+}
+
+.about-content p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 20px;
+  max-width: 990px;
+}
+
+.reviews {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 10px;
+}
+
+.review {
+  width: 30%; /* Adjust review width for three reviews in a row */
+  padding: 20px;
+  border-radius: 8px;
+  background-color: #fff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.customer-image {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin: 0 auto 20px;
+  display: block;
+}
+
+.review-text {
+  font-style: italic;
+  margin-bottom: 20px;
+}
+
+.customer-name {
+  font-weight: bold;
+}
+
+.contact-us {
+  background-color: #cdcdcd;
+  padding: 50px 0;
+}
+
+.contact-form {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.contact-form .form-group {
+  margin-bottom: 20px;
+}
+
+.contact-form label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.contact-form textarea {
+  resize: vertical;
+}
+
+.contact-form button {
+  background-color: #8bc34a;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.contact-form button:hover {
+  background-color: #9ccc65;
+}
+
+.footer {
+    background-color: #141414;
+    color: #ffeb3b;
+    padding: 20px 0;
+    font-size: 14px;
+}
+
+.footer .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-left {
+    flex: 1;
+}
+
+.footer-right {
+    flex: 1;
+    text-align: right;
+}
+
+.footer-logo {
+    max-width: 100px;
+    height: auto;
+}
+
